@@ -1,9 +1,9 @@
-import * as http from "http";
-import app from "./app";
+const http = require("http");
+const app = require("./app.js");
 
 const port = process.env.PORT || 9876;
 
-const server: http.Server = http.createServer(app);
+const server = http.createServer(app);
 
 process.env.NODE_ENV !== "production" &&
   server.on("listening", () =>

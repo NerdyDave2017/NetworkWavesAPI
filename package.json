@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node-dev --respawn src/index.ts",
-    "dev": "nodemon --watch src --exec \"ts-node-dev --respawn src/index.ts\"",
+    "start": "node src/index.js",
+    "dev": "nodemon --watch src --exec node src/index.js",
     "build": "tsc"
   },
   "repository": {
